@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Add Expense</h2>
+
+<input id="title" placeholder="Title">
+<input id="category" placeholder="Category">
+<input id="amount" type="number" placeholder="Amount">
+
+<label>Date & Time (optional):</label>
+<input type="datetime-local" id="expenseDateTime">
+
+<button onclick="addExpense()">Add Expense</button>
+
+<hr>
+
+<h3>Your Expenses</h3>
+
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Category</th>
+      <th>Amount</th>
+      <th>Date & Time</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="expenseTableBody"></tbody>
+</table>
+
+<hr>
+<button onclick="logout()">Logout</button>
+
+<h3>Monthly Summary</h3>
+<input id="year" placeholder="Year">
+<input id="month" placeholder="Month">
+<button onclick="getMonthlySummary()">Check</button>
+<p id="summaryResult"></p>
+
+
+
+
+
+<p id="summaryResult"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
